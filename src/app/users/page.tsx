@@ -15,9 +15,9 @@ import PageTitle from "@/components/PageTitle";
 type Props = {};
 type Payment = {
   name: string;
-  email: string;
-  lastOrder: string;
-  method: string;
+  renstra: string;
+  renja: string;
+  baforumopd: string;
 };
 
 const columns: ColumnDef<Payment>[] = [
@@ -30,27 +30,27 @@ const columns: ColumnDef<Payment>[] = [
           <img
             className="h-10 w-10"
             src={`https://api.dicebear.com/7.x/lorelei/svg?seed=${row.getValue(
-              "name"
+              "name",
             )}`}
             alt="user-image"
           />
           <p>{row.getValue("name")} </p>
         </div>
       );
-    }
+    },
   },
   {
     accessorKey: "renstra",
-    header: "Renstra"
+    header: "Renstra",
   },
   {
     accessorKey: "renja",
-    header: "Renja"
+    header: "Renja",
   },
   {
     accessorKey: "baforumopd",
-    header: "BA Forum OPD"
-  }
+    header: "BA Forum OPD",
+  },
 ];
 
 const data: Payment[] = [
@@ -58,92 +58,92 @@ const data: Payment[] = [
     name: "Dishub",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "Perkim",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "Binamarga",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "Dinas Pertanian",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "Dinas Koperasi",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "Dinas Pariwisata",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "PU SDA",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "DLH",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "BPBD",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "Disperindag",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "Dinas Peternakan",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "Kominfo",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "Dinas Perikanan",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "BKPSDM",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
+    baforumopd: "Sudah",
   },
   {
     name: "BPKPD",
     renstra: "Sudah",
     renja: "Belum",
-    baforumopd: "Sudah"
-  }
+    baforumopd: "Sudah",
+  },
 ];
 
 export default function UsersPage({}: Props) {
